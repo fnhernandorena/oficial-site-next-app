@@ -13,12 +13,15 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@vercel/postgres": "^0.5.1",
     "clsx": "^2.1.0",
     "font-awesome": "^4.7.0",
     "next": "14.0.4",
     "react": "^18",
     "react-content-loader": "^6.2.1",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",

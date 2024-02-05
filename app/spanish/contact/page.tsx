@@ -1,6 +1,8 @@
+
+
 export default function Page() {
     return (
-        <main id="cont-main">
+        <main className='w-full'> <div className='w-full flex justify-around gap-5'>
         <ul className="text container">
           <li>
             <h3 className="text-3xl font-bold text-red-500 border-double border-b-8 border-r-8 border-red-500">Contacto rapido</h3>
@@ -38,7 +40,7 @@ export default function Page() {
               </li>
             </ul>
           </li>
-        </ul>
+        </ul></div>
       </main>
     )
   }

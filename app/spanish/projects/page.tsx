@@ -1,9 +1,9 @@
-import Studies from "@/app/components/studies/spanish";
+import Projects from "@/app/components/projects/spanish";
 
 export default function Page() {
   return (
     <main className="flex flex-col">
-      <Studies />
+      <Projects />
     </main>
   );
 }

@@ -1,41 +1,45 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import clsx from 'clsx';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
+import { CiSettings } from "react-icons/ci";
 
 const links = [
-  { name: 'Sobre mi', href: '/spanish' },
+  { name: "Sobre mi", href: "/spanish" },
   {
-    name: 'Formacion Academica',
-    href: '/spanish/studies',
+    name: "Formacion Academica",
+    href: "/spanish/studies",
   },
-  { name: 'Experiencia laboral', href: '/spanish/work-experience' },
-  { name: 'Contacto', href: '/spanish/contact' },
+  {
+    name: "Proyectos",
+    href: "/spanish/projects"
+  },
+  { name: "Experiencia laboral", href: "/spanish/work-experience" },
+  { name: "Contacto", href: "/spanish/contact" },
 ];
 
 const Nav = () => {
   const pathname = usePathname();
-    return (
-        <nav className="flex w-full flex-row justify-around bg-neutral-700 mb-10">
-       {links.map((link) => {
+  return (
+    <nav className="w-full flex fixed bg-black top-0 justify-between items-center  h-20 px-8 py-1">
+      <p className="text-white text-xl border border-cyan-600 rounded-lg p-4">NicoScript</p>
+      {links.map((link) => {
         return (
           <Link
             key={link.name}
             href={link.href}
-            className={clsx(
-              'bg-red-200 p-3 w-56 text-center rounded-2xl',
-              {
-                'bg-sky-100 text-blue-600': pathname === link.href,
-              },
-            )}
+            className={clsx("border-l border-r flex border-gray-600 p-3 w-28 justify-center  text-white h-full items-center my-1", {
+              "border-sky-300 text-sky-300 text-center": pathname === link.href,
+            })}
           >
-            <p className="hidden md:block">{link.name}</p>
+            <p className="hidden md:block text-wrap text-center">{link.name}</p>
           </Link>
         );
       })}
-      </nav>
-    );
-  };
-  
-  export default Nav;
+      <CiSettings className="text-white h-12 w-12"/>
+    </nav>
+  );
+};
+
+export default Nav;
