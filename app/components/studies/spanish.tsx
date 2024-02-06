@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { studies } from "@/data";
+import { studies } from "@/app/lib/data";
 
 
 export default async function Studies() {

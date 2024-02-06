@@ -5,16 +5,16 @@ import clsx from "clsx";
 import { usePathname } from "next/navigation";
 
 const links = [
-    { name: "Sobre mi", href: "/admin/edit" },
+    { name: "Blog", href: "/admin/edit" },
     {
-      name: "Formacion Academica",
+      name: "Studies",
       href: "/admin/edit/studies",
     },
     {
-      name: "Proyectos",
+      name: "Projects",
       href: "/admin/edit/projects"
     },
-    { name: "Experiencia laboral", href: "/admin/edit/work-experience" },
+    { name: "Work experience", href: "/admin/edit/work-experience" },
   ];
 
 const Nav = () => {
