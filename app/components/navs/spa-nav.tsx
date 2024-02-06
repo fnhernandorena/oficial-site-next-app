@@ -23,21 +23,23 @@ const Nav = () => {
   const pathname = usePathname();
   return (
     <nav className="w-full flex fixed bg-black top-0 justify-between items-center  h-20 px-8 py-1">
-      <p className="text-white text-xl border border-cyan-600 rounded-lg p-4">NicoScript</p>
+      <p className="text-white text-xl border-2 border-cyan-600 rounded-lg p-4">NicoScript</p>
       {links.map((link) => {
         return (
           <Link
             key={link.name}
             href={link.href}
-            className={clsx("border-l border-r flex border-gray-600 p-3 w-28 justify-center  text-white h-full items-center my-1", {
-              "border-sky-300 text-sky-300 text-center": pathname === link.href,
+            className={clsx("border-l-2 border-r-2 flex border-gray-600 p-3 w-28 justify-center  text-white h-full items-center my-1 duration-300 hover:border-sky-300", {
+              "border-sky-300": pathname === link.href,
             })}
           >
             <p className="hidden md:block text-wrap text-center">{link.name}</p>
           </Link>
         );
       })}
-      <CiSettings className="text-white h-12 w-12"/>
+      <Link
+      href={'/'}>
+      <CiSettings className="text-white h-12 w-12"/></Link>
     </nav>
   );
 };

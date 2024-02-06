@@ -17,23 +17,23 @@ export default async function Projects() {
     width={960}
     height={960}
   />
-    <p className="text-white">{project.cuerpospa}</p>
+    <p className="text-white text-center">{project.cuerpospa}</p>
     
           {project.link1 !== null && (
   <Link
-  className="p-2 bg-gray-900 rounded-lg m-2"
+  className="p-2 bg-gray-900 rounded-lg m-2 duration-300 hover:bg-sky-700"
   target="_blank"
   key={project.link1name}
   href={project.link1}
-><p className="text-white">{project.link1name}</p></Link>
+><p className="text-white ">{project.link1name}</p></Link>
 )}
 {project.link2 !== null && (
   <Link
-  className="p-2 bg-gray-900 rounded-lg m-2"
+  className="p-2 bg-gray-900 rounded-lg m-2 duration-300 hover:bg-sky-700"
   target="_blank"
   key={project.link2name}
   href={project.link2}
-><p className="text-white">{project.link2name}</p></Link>
+><p className="text-white ">{project.link2name}</p></Link>
 )}
     </div>
     )}
