@@ -85,3 +85,18 @@ export async function createProject(prevState: State, formData: FormData) {
 revalidatePath('/admin/edit/projects');
 redirect('/admin/edit/projects');    
 }
+
+
+export async function workExp() {
+
+  try {
+    const data = await sql`SELECT * FROM work_exp
+    ORDER BY id ASC;`;
+
+    const data2 = data.rows;
+    return data2;
+  } catch (error) {
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch the studies.');
+  }
+} 

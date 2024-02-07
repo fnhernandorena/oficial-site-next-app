@@ -1,4 +1,4 @@
-import WorkExp from "@/app/components/work-exp/spanish";
+import WorkExp from "@/app/components/work-exp/english";
 
 export default function Page() {
   return (
