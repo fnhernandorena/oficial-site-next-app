@@ -8,8 +8,8 @@ export default async function Studies() {
     <div className="w-full">
     {stu?.map((studie) =>
         <div key={studie.id}>
-    <h3 className="text-3xl font-bold text-sky-300 border-double border-b-8 border-r-8 border-sky-300 my-4">{studie.titulo}</h3>
-    <p className="text-xl text-white my-5">{studie.subtitulo}</p>
+    <h3 className="text-3xl font-bold text-sky-300 border-double border-b-8 border-r-8 border-sky-300 my-4">{studie.tituloita}</h3>
+    <p className="text-xl text-white my-5">{studie.cuerpoita}</p>
     {studie.img1_id !== null && (
   <Image
     src={studie.img1_id}
