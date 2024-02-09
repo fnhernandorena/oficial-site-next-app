@@ -16,6 +16,7 @@ export default async function Projects() {
     alt={`Foto de mi cara`}
     width={960}
     height={960}
+    
   />
     <p className="text-white text-center">{project.cuerpospa}</p>
     
