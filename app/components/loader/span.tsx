@@ -1,6 +1,6 @@
 const Span = () => {
   return (
-    <span className="loader"></span>
+   <div><span className="loader"></span></div> 
   );
 };
 
