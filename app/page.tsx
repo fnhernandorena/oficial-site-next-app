@@ -10,7 +10,7 @@ export default function Page() {
           </h1>
         </b>
         <div className="flex flex-1 flex-wrap justify-center">
-          <div className=" bg-gray-900 transition-linear duration-300 text-white w-4/5 py-5 flex items-center md:justify-around rounded-xl m-3 font-medium border-2 border-solid border-sky-600  md:m-5 md:py-30 text-xl flex-col md:w-72 md:h-72 md:rounded-3xl">
+          <div className=" my-3 bg-gray-900 transition-linear duration-300 text-white w-full py-5 flex items-center md:justify-around rounded-xl font-medium border-2 border-solid border-sky-600  md:m-5 md:py-30 text-xl flex-col md:w-72 md:h-72 md:rounded-3xl">
             <h3 className='text-3xl p-1 text-center mb-3' >
               Bienvenido!
               <br /> este es mi sitio oficial
@@ -28,7 +28,7 @@ export default function Page() {
               Vamos! <i className="fa-solid fa-bolt"></i>
             </Link></div>
           </div>
-          <div className=" bg-gray-900 transition-linear duration-300 text-white w-4/5 py-5 flex items-center md:justify-around rounded-xl m-3 font-medium border-2 border-solid border-sky-600  md:m-5 md:py-30 text-xl flex-col md:w-72 md:h-72 md:rounded-3xl">
+          <div className="  my-3 bg-gray-900 transition-linear duration-300 text-white w-full py-5 flex items-center md:justify-around rounded-xl font-medium border-2 border-solid border-sky-600  md:m-5 md:py-30 text-xl flex-col md:w-72 md:h-72 md:rounded-3xl">
             <h3 className='text-3xl p-1 text-center mb-3' >
             Welcome!
               <br /> this is my oficial site
@@ -39,14 +39,14 @@ export default function Page() {
               pick this option:
             </p>
             <Link
-            href={'/spanish'}
+            href={'/english'}
               type="button"
               className="w-25 bg-sky-600 md:bg-gray-600 rounded-2xl w-36 p-3 my-1 text-center duration-300 hover:bg-sky-600"
             >
               Come on!  <i className="fa-solid fa-bolt"></i>
             </Link></div>
           </div>
-          <div className=" bg-gray-900 transition-linear duration-300 text-white w-4/5 py-5 flex items-center md:justify-around rounded-xl m-3 font-medium border-2 border-solid border-sky-600  md:m-5 md:py-30 text-xl flex-col md:w-72 md:h-72 md:rounded-3xl">
+          <div className=" my-3 bg-gray-900 transition-linear duration-300 text-white w-full py-5 flex items-center md:justify-around rounded-xl font-medium border-2 border-solid border-sky-600  md:m-5 md:py-30 text-xl flex-col md:w-72 md:h-72 md:rounded-3xl">
             <h3 className='text-3xl p-1 text-center mb-3' >
             Benvenuto!
               <br /> questo è il mio sito ufficiale
@@ -57,7 +57,7 @@ export default function Page() {
               <br /> seleziona questa opzione:
             </p>
             <Link
-            href={'/spanish'}
+            href={'/italian'}
               type="button"
               className="w-25 bg-sky-600 md:bg-gray-600 rounded-2xl w-36 p-3 my-1 text-center duration-300 hover:bg-sky-600"
             >
