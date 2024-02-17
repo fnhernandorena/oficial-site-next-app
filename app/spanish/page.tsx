@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default async function Page() {
   return (
-    <main className="flex-1 flex">
+    <main className="flex-1 flex mx-2">
       <ul className="text">
         <li>
           <h3 className="text-3xl font-bold text-sky-300 border-double border-b-8 border-r-8 border-sky-300">Sobre mi</h3>
-          <div className="flex items-center gap-3 py-4">
+          <div className="flex justify-center flex-wrap md:flex-nowrap items-center gap-3 py-4">
             <Image
               src={"/img/yo1.jpg"}
               className="rounded-full"

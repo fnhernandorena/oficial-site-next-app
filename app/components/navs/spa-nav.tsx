@@ -26,7 +26,7 @@ const links = [
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className="w-full flex fixed bg-black bottom-0 md:top-0 justify-between items-center  h-20 md:px-8 py-1">
+    <nav className="w-full flex fixed bg-black bottom-0 md:top-0 justify-between items-center  h-20 md:px-8 pb-5 md:pb-1 py-1">
       <p className="hidden md:block text-white text-xl border-2 border-cyan-600 rounded-lg p-4">NicoScript</p>
       {links.map((link) => {
         return (
