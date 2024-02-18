@@ -5,7 +5,7 @@ export default function Page() {
     <main className="flex-1 h-full flex bg-black pb-48">
       <div className="w-full h-full flex justify-center content-center flex-col p-9">
         <b className='flex justify-center'>
-          <h1 className="text-center p-8 mt-20 mb-16 bg-sky-600 rounded-full text-3xl md:text-5xl w-4/5 text-white">
+          <h1 className="text-center p-8 mt-20 mb-16 bg-sky-600 rounded-full text-3xl md:text-5xl w-full text-white">
             Hi! I`m Francisco Hernandorena <i className="fa-solid fa-code"></i>
           </h1>
         </b>

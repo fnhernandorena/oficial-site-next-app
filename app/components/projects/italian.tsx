@@ -8,7 +8,7 @@ export default async function Projects() {
   return (
     <div className="w-full flex flex-wrap justify-around">
     {pro?.map((project) =>
-        <div className="w-5/12 bg-black rounded-xl p-3 m-3 flex flex-col justify-between items-center" key={project.id}>
+        <div className="w-full md:w-5/12 bg-black rounded-xl p-3 m-3 flex flex-col justify-between items-center" key={project.id}>
     <h3 className="text-3xl font-bold text-sky-300">{project.tituloita}</h3>
   <Image
     src={project.img_path}
