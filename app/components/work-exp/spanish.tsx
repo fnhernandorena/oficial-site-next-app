@@ -12,7 +12,7 @@ export default async function WorkExp() {
     <p className="text-xl text-white my-5">{work.cuerpospa}</p>
     {work.link13 !== null && (
   <Link
-  className="flex justify-center rounded-xl bg-gray-800 duration-300 hover:bg-sky-700 mb-10 p-2"
+  className="flex justify-center rounded-xl bg-sky-700 md:bg-gray-800 duration-300 hover:bg-sky-700 mb-10 p-2"
   target="_blank"
   key={work.link1name}
   href={work.link1}

@@ -39,7 +39,7 @@ export default function Page() {
                 <Link
                   href={link.href}
                   className={
-                    "flex justify-center rounded-xl bg-gray-800 duration-300 hover:bg-sky-700 m-3 p-3"
+                    "flex justify-center rounded-xl bg-sky-700 md:bg-gray-800 duration-300 hover:bg-sky-700 m-3 p-3"
                   }
                 >
                   <p className=" text-wrap text-center">{link.name}</p>
