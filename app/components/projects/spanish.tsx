@@ -36,6 +36,14 @@ export default async function Projects() {
   href={project.link2}
 ><p className="text-white ">{project.link2name}</p></Link>
 )}
+{project.ytlink !== null && (
+  <Link
+  className="p-2 bg-red-700 md:bg-gray-900 rounded-lg m-2 duration-300 hover:bg-red-700"
+  target="_blank"
+  key={project.yttitle}
+  href={project.ytlink}
+><p className="text-white ">{project.yttitle}</p></Link>
+)}
     </div>
     )}
      
