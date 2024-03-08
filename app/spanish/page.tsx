@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function Page() {
   return (
@@ -37,6 +38,9 @@ export default async function Page() {
             <br />
           </p>
         </li>
+        <li><h3 className="text-3xl font-bold text-sky-300 border-double border-b-8 border-r-8 border-sky-300">Descarga mi Curriculum Vitae</h3>
+        <Link href="/documents/FranciscoHernandorenaResume.pdf" className="flex justify-center rounded-xl bg-sky-700 md:bg-gray-800 duration-300 hover:bg-sky-700 m-3 p-3">Click Aqui!</Link>
+          </li>
       </ul>
     </main>
   );
