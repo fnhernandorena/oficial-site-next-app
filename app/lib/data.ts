@@ -43,7 +43,7 @@ export async function projects() {
 
   try {
     const data = await sql`SELECT * FROM projects
-    ORDER BY id ASC;`;
+    ORDER BY id DESC;`;
 
     const latestInvoices = data.rows;
     return latestInvoices;
