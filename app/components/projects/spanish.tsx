@@ -13,7 +13,7 @@ export default async function Projects() {
   <Image
     src={project.img_path}
     className="rounded-3xl my-3"
-    alt={`Foto de mi cara`}
+    alt={project.tituloeng}
     width={960}
     height={960}
     
