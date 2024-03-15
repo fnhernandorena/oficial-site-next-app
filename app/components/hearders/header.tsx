@@ -8,7 +8,7 @@ const Header = () => {
            flex justify-around items-center"> <FaCode />
             <b>
              
-              NicoScript <br /> Oficial Site
+              NicoDev <br /> Oficial Site
               
              
             </b><FaCode />
