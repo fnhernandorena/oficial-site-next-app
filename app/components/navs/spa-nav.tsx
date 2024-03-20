@@ -36,7 +36,7 @@ const Nav = () => {
       <div className="flex fixed left-0 top-0 w-full md:hidden bg-black justify-around items-center p-1">
         {" "}
         <p className="text-white text-xl border-2 border-cyan-600 rounded-lg p-1">
-          NicoScript
+          NicoDev
         </p>
         <Link key="toindex" href={"/"}>
           <RxExit className="border-l-2 border-r-2 px-3 border-gray-600 md:hidden block text-white w-full h-8" />
@@ -44,7 +44,7 @@ const Nav = () => {
       </div>
       <nav className="w-full flex fixed bg-black left-0 bottom-0 md:top-0 justify-between items-center  h-20 md:px-8 pb-5 md:pb-1 py-1">
         <p className="hidden md:block text-white text-xl border-2 border-cyan-600 rounded-lg p-4">
-          NicoScript
+          NicoDev
         </p>
         {links.map((link) => {
           return (
