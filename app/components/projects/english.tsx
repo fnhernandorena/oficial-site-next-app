@@ -8,7 +8,7 @@ export default async function Projects() {
   return (
     <div className="w-full flex flex-wrap justify-around">
     {pro?.map((project) =>
-        <div className="w-full md:w-5/12 bg-black rounded-xl p-3 m-3 flex flex-col justify-between items-center" key={project.id}>
+        <div className="w-full md:w-5/12 bg-black rounded-xl p-3 m-3 flex flex-col justify-around items-center" key={project.id}>
     <h3 className="text-3xl font-bold text-sky-300">{project.tituloeng}</h3>
   <Image
     src={project.img_path}
@@ -21,7 +21,7 @@ export default async function Projects() {
     
           {project.link1 !== null && (
   <Link
-  className="p-2 bg-sky-700 md:bg-gray-900 rounded-lg m-2 duration-300 hover:bg-sky-700"
+  className="p-2 bg-sky-700 w-72 text-center md:bg-gray-900 rounded-lg m-2 duration-300 hover:bg-sky-700"
   target="_blank"
   key={project.link1name}
   href={project.link1}
@@ -29,7 +29,7 @@ export default async function Projects() {
 )}
 {project.link2 !== null && (
   <Link
-  className="p-2 bg-sky-700 md:bg-gray-900 rounded-lg m-2 duration-300 hover:bg-sky-700"
+  className="p-2 bg-sky-700 w-72 text-center md:bg-gray-900 rounded-lg m-2 duration-300 hover:bg-sky-700"
   target="_blank"
   key={project.link2name}
   href={project.link2}

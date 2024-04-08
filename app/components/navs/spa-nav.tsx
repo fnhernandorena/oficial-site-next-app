@@ -42,7 +42,7 @@ const Nav = () => {
           <RxExit className="border-l-2 border-r-2 px-3 border-gray-600 md:hidden block text-white w-full h-8" />
         </Link>
       </div>
-      <nav className="w-full flex fixed bg-black left-0 bottom-0 md:top-0 justify-between items-center  h-20 md:px-8 pb-5 md:pb-1 py-1">
+      <nav className="w-full h-20 flex fixed bg-black left-0 bottom-0 md:top-0 justify-between items-center  md:h-24 md:px-8 pb-5 md:pb-1 py-1">
         <p className="hidden md:block text-white text-xl border-2 border-cyan-600 rounded-lg p-4">
           NicoDev
         </p>

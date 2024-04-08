@@ -22,7 +22,7 @@ export default async function Projects() {
     
           {project.link1 !== null && (
   <Link
-  className="p-2 bg-sky-700 md:bg-gray-900 rounded-lg m-2 duration-300 hover:bg-sky-700"
+  className="p-2 bg-sky-700 w-72 text-center md:bg-gray-900 rounded-lg m-2 duration-300 hover:bg-sky-700"
   target="_blank"
   key={project.link1name}
   href={project.link1}
@@ -30,7 +30,7 @@ export default async function Projects() {
 )}
 {project.link2 !== null && (
   <Link
-  className="p-2 bg-sky-700 md:bg-gray-900 rounded-lg m-2 duration-300 hover:bg-sky-700"
+  className="p-2 bg-sky-700 w-72 text-center md:bg-gray-900 rounded-lg m-2 duration-300 hover:bg-sky-700"
   target="_blank"
   key={project.link2name}
   href={project.link2}
