@@ -5,10 +5,11 @@ import Link from "next/link";
 
 export default async function Projects() {
     const pro = await projects();
+    let dir = 0
   return (
     <div className="w-full flex flex-wrap justify-around">
     {pro?.map((project) =>
-        <div className="w-full md:w-5/12 bg-black rounded-xl p-3 m-3 flex flex-col justify-between items-center" key={project.id}>
+        <div  data-aos={dir == 0 && "fade-up-right" || dir == 1 && "fade-up-left"} className="z-90 w-full md:w-5/12 bg-black rounded-xl p-3 m-3 flex flex-col justify-between items-center" key={project.id}>
     <h3 className="text-3xl font-bold text-sky-300">{project.titulospa}</h3>
   <Image
     src={project.img_path}
@@ -43,7 +44,7 @@ export default async function Projects() {
   key={project.yttitle}
   href={project.ytlink}
 ><p className="text-white ">{project.yttitle}</p></Link>
-)}
+)}{dir =dir+1}
     </div>
     )}
      

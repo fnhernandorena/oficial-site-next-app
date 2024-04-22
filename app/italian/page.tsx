@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default async function Page() {
   return (
-    <main className="flex-1 flex mx-2">
+    <main   data-aos="fade-right" className="flex-1 flex mx-2">
       <ul className="text">
         <li>
           <h3 className="text-3xl font-bold text-sky-300 border-double border-b-8 border-r-8 border-sky-300">Sobre mi</h3>

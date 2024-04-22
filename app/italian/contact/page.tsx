@@ -26,7 +26,7 @@ const links = [
 
 export default function Page() {
   return (
-    <div className="flex-1">
+    <div  data-aos="fade-right" className="flex-1">
       <div className="w-full flex justify-start">
         <div className="w-full md:w-1/2 my-2 mx-2">
           <h3 className="text-3xl font-bold text-sky-300 border-double border-b-8 border-r-8 border-sky-300">

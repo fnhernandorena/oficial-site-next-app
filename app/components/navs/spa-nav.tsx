@@ -32,7 +32,7 @@ const links = [
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <div>
+    <div  className="z-1000">
       <div className="flex fixed left-0 top-0 w-full md:hidden bg-black justify-around items-center p-1">
         {" "}
         <p className="text-white text-xl border-2 border-cyan-600 rounded-lg p-1">
