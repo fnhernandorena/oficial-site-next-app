@@ -43,7 +43,7 @@ export default async function Projects() {
   key={project.yttitle}
   href={project.ytlink}
 ><p className="text-white ">{project.yttitle}</p></Link>
-)}{dir =dir+1}
+)} <p className="hidden">{dir =dir+1}</p> 
     </div>
     )}
      
