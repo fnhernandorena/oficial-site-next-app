@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='h-full'>
-      <head><link rel="canonical" href="https://oficial-site-next-app.vercel.app/" /></head>
+      <head><link rel="canonical" href="https://oficial-site-next-app.vercel.app/" /> </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
