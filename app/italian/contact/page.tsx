@@ -1,28 +1,8 @@
 import Link from "next/link";
 import React from "react";
-
-const links = [
-  {
-    name: " fnhernandorena@gmail.com",
-    href: "mailto:fnhernandorena@gmail.com",
-    title: "Email:",
-  },
-  {
-    name: "Francisco Nicolas Hernandorena",
-    href: "https://www.linkedin.com/in/fnhernandorena/",
-    title: "LinkedIn:",
-  },
-  {
-    name: " Nico_hernandorenaa",
-    href: "https://www.instagram.com/nico_hernandorenaa/",
-    title: "Instagram:",
-  },
-  {
-    name: " Nico_Hernandorena",
-    href: "https://t.me/Nico_Hernandorena",
-    title: " Telegram:",
-  },
-];
+import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
+import { FaGithub, FaInstagram } from "react-icons/fa6";
+import { IoMailOutline } from "react-icons/io5";
 
 export default function Page() {
   return (
@@ -32,21 +12,38 @@ export default function Page() {
           <h3 className="text-3xl font-bold text-sky-300 border-double border-b-8 border-r-8 border-sky-300">
             Contatto Rapido
           </h3>
-          {links.map((link) => {
-            return (
-              <div key={link.name}>
-                <p>{link.title}</p>
-                <Link
-                  href={link.href}
-                  className={
-                    "flex justify-center rounded-xl bg-sky-700 md:bg-gray-800 duration-300 hover:bg-sky-700 m-3 p-3"
-                  }
-                >
-                  <p className=" text-wrap text-center">{link.name}</p>
-                </Link>
-              </div>
-            );
-          })}
+          <div className="flex justify-around text-3xl pt-10">
+            <Link
+              className="hover:text-pink-500 duration-300"
+              href="https://www.instagram.com/nico_hernandorenaa/"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              className="duration-300 hover:text-red-600"
+              href="mailto:fnhernandorena@gmail.com"
+            >
+              <IoMailOutline />
+            </Link>
+            <Link
+              className="duration-300 hover:text-blue-700"
+              href="https://www.linkedin.com/in/fnhernandorena/"
+            >
+              <FaLinkedin />
+            </Link>
+            <Link
+              className="duration-300 hover:text-black"
+              href="https://github.com/fnhernandorena"
+            >
+              <FaGithub />
+            </Link>
+            <Link
+              className="duration-300 hover:text-blue-400"
+              href="https://t.me/Nico_Hernandorena"
+            >
+              <FaTelegramPlane />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
