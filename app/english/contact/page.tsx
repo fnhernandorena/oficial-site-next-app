@@ -5,6 +5,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+
 export default function Page() {
   return (
     <div data-aos="fade-right" className="flex-1">
